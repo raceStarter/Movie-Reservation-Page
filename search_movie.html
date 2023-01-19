@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>영화 검색하기</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="search_movie_style.css" />
+  </head>
+  <body>
+    <div id="membership">
+      <span id="signed_id"></span>
+      <button id="login_btn">로그인</button>
+      <button id="logOut_btn">로그아웃</button>
+      <a href="myReserve.php" id="reserve_info" target="_blank">예약정보</a>
+    </div>
+    <h1>영화 검색하기</h1>
+    <div id="search_box">
+      <input type="text" name="input_value" id="input_box" /><br /><br />
+      <input type="submit" value="영화 검색" id="search_btn" />
+    </div>
+    <div id="result">
+      <table id="result_table">
+        <tr>
+          <th>선택</th>
+          <th>영화 제목</th>
+          <th>장르</th>
+          <th>감독</th>
+          <th>배우</th>
+          <th>화일</th>
+        </tr>
+      </table>
+    </div>
+    <div id="modal">
+      <table class="cell">
+        <tr>
+          <td class="cell">id</td>
+          <td class="cell"><input type="text" name="id" id="id_box" /></td>
+        </tr>
+        <tr>
+          <td class="cell">password</td>
+          <td class="cell">
+            <input type="password" name="password" id="password_box" />
+          </td>
+        </tr>
+        <tr>
+          <td class="cell"></td>
+          <td class="cell">
+            <button id="submit_btn">Submit</button
+            ><button id="signIn_btn">SignIn</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div id="modal2">
+      <div id="table_box">
+        <table id="place_table">
+          <tr>
+            <th>선택</th>
+            <th>상영 날짜</th>
+            <th>상영관</th>
+            <th>예약수</th>
+          </tr>
+        </table>
+      </div>
+      <br />
+      <label for="number">예약 할 인원 : </label
+      ><input type="number" id="number" min="1" max="10" /><br /><br />
+      <button id="reserve_btn">예약</button>
+      <button id="close_btn">닫기</button>
+    </div>
+    <div id="bg"></div>
+    <script src="user.js"></script>
+    <script src="findMovie.js"></script>
+  </body>
+</html>

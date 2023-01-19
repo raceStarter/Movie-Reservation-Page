@@ -1,0 +1,36 @@
+h1 {
+  text-align: center;
+}
+
+table {
+  padding: 0 12px;
+  width: 100%;
+}
+
+th,
+td {
+  padding: 6px;
+}
+
+th {
+  text-align: left;
+  vertical-align: top;
+  width: 100px;
+}
+
+#title {
+  width: 100%;
+}
+
+#added-list {
+  padding-top: 8px;
+}
+
+.actor {
+  width: 110px;
+  margin-right: 8px;
+}
+
+.infoBox {
+  display: block;
+}

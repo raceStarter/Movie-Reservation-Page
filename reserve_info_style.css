@@ -1,0 +1,39 @@
+#user {
+  text-align: right;
+  padding: 0 12px;
+}
+
+#user > span {
+  color: blue;
+  font-weight: bold;
+}
+
+#table_box {
+  padding: 0 12px;
+}
+
+#cancel_btn {
+  margin-left: 12px;
+}
+
+table,
+td,
+th {
+  border: 1px solid #dfe6e9;
+  border-collapse: collapse;
+  text-align: center;
+  padding: 6px 0;
+}
+
+table {
+  width: 100%;
+}
+
+th {
+  color: white;
+  background-color: #8c7ae6;
+}
+
+.notice {
+  text-align: center;
+}

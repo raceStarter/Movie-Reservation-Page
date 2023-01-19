@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>영화 저장 페이지</title>
+    <link rel="stylesheet" href="save_movie_style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <h1>영화 저장 페이지</h1>
+    <form action="saveMovies.php" method="post" enctype="multipart/form-data">
+      <table>
+        <tr>
+          <th>영화 제목</th>
+          <td><input type="text" id="title" name="title" /></td>
+        </tr>
+        <tr>
+          <th>장르</th>
+          <td>
+            <select name="genre" id="genre">
+              <option value="drama">드라마</option>
+              <option value="action">액션</option>
+              <option value="animation">애니메이션</option>
+              <option value="comedy">코메디</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <th>감독</th>
+          <td><input type="text" name="director" /></td>
+        </tr>
+        <tr>
+          <th>출연자</th>
+          <td id="actors">
+            <input type="text" class="actor" name="actor0" />
+            <span id="more"></span>
+            <button id="add-actor-btn">출연자 추가</button>
+            <button id="del-actor-btn">출연자 삭제</button>
+          </td>
+        </tr>
+        <tr>
+          <th>상영 날짜</th>
+          <td>
+            <input type="date" id="show-date" />
+            <button id="search-cinema-btn">상영관 검색</button>
+            <button id="add-show-info-btn" disabled>상영 정보 추가</button>
+          </td>
+        </tr>
+        <tr>
+          <th>상영 장소</th>
+          <td>
+            <label for="place1">상영관1</label
+            ><input
+              type="radio"
+              name="place"
+              value="상영관1"
+              id="place1"
+              disabled
+            />
+            <label for="place2">상영관2</label
+            ><input
+              type="radio"
+              name="place"
+              value="상영관2"
+              id="place2"
+              disabled
+            />
+            <label for="place3">상영관3</label
+            ><input
+              type="radio"
+              name="place"
+              value="상영관3"
+              id="place3"
+              disabled
+            />
+            <div id="added-list"></div>
+          </td>
+        </tr>
+        <tr>
+          <th>포스터 화일</th>
+          <td><input type="file" name="fileToUpload" /></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <input type="submit" value="저장하기" name="submit" />
+          </td>
+        </tr>
+      </table>
+    </form>
+    <script src="app.js"></script>
+  </body>
+</html>
