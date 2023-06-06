@@ -2,7 +2,7 @@
 영화 예약 페이지 제작
 
 ### 기반
-html, css, js, php, json, Apache
+html, css, js, php, json, Apache HTTP Server
 
 ### 주요 기능
 1. 영화 저장 페이지에서 영화 등록(save_movie.html)
